@@ -1,0 +1,137 @@
+/* Reset Pengaturan Awal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container untuk Menyamakan Tata Letak */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Bagian Header */
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 0;
+}
+
+header .logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #0099ff;
+    border-radius: 3px;
+}
+
+/* Bagian Banner Utama */
+.hero {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hero .hero-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Bagian Daftar Materi */
+.materi-section {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.materi-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+.materi-card {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.materi-card h3 {
+    color: #0066cc;
+    margin-bottom: 5px;
+}
+
+.materi-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.materi-card a:hover {
+    background-color: #0099ff;
+}
+
+/* Bagian Footer */
+footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsif untuk Layar Lebar */
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .materi-card {
+        width: 48%;
+        display: inline-block;
+        margin-right: 2%;
+        vertical-align: top;
+    }
+}

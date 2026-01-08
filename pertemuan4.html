@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 4 - JavaScript Dasar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .materi-detail {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .materi-detail h2 {
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+        .materi-detail p, .materi-detail li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../assets/images/logo-web.jpg" alt="Logo UNPAM" class="logo">
+            <h1>Pertemuan 4: JavaScript Dasar</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Kembali ke Beranda</a></li>
+                    <li><a href="pertemuan3.html">Pertemuan 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="materi-detail">
+        <h2>Pengenalan JavaScript untuk Interaktivitas</h2>
+        <h3>Apa itu JavaScript?</h3>
+        <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat website menjadi interaktif (misal: tombol yang merespon klik, form yang bisa dicek, animasi).</p>
+        
+        <h3>Cara Menambahkan JavaScript ke HTML:</h3>
+        <ul>
+            <li><strong>Inline JS</strong>: Ditambahkan ke tag HTML dengan atribut <code>onclick</code> atau <code>onload</code>.</li>
+            <li><strong>Internal JS</strong>: Ditulis di dalam tag <code>&lt;script&gt;</code> di bagian <code>&lt;body&gt;</code>.</li>
+            <li><strong>External JS</strong>: Ditulis di file terpisah (misal <code>script.js</code>) dan dihubungkan dengan tag <code>&lt;script&gt;</code>.</li>
+        </ul>
+
+        <h3>Contoh Kode JavaScript Sederhana:</h3>
+         </pre
+// Menampilkan pesan saat tombol diklik
+function tampilPesan() {
+    let nama = prompt('Masukkan nama Anda:');
+    alert('Halo ' + nama + '! Selamat belajar JavaScript.');
+}
+
+// Mengubah warna latar belakang saat halaman di-scroll
+window.addEventListener('scroll', function() {
+    let header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.style.backgroundColor = '#003366';
+    } else {
+        header.style.backgroundColor = '#0066cc';
+    }
+});
+        </pre>
+
+        <a href="pertem
+
+        <!-- Tambahkan sebelum tag <script> -->
+<section class="materi-detail" style="max-width: 1200px; margin: 30px auto; padding: 0 20px;">
+    <!-- Judul Materi -->
+    <div class="judul-materi" style="text-align: center; margin-bottom: 30px;">
+        <h2 style="color: #9b59b6; font-size: 2rem;">Pertemuan 4: Pengenalan JavaScript untuk Interaktivitas</h2>
+        <hr style="width: 100px; height: 3px; background-color: #9b59b6; border: none;">
+    </div>
+
+    <!-- Daftar Topik Materi -->
+    <div class="topik-materi" style="background-color: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 25px;">
+        <h3 style="color: #333; margin-bottom: 15px;"><i class="fas fa-bolt" style="color: #9b59b6; margin-right: 10px;"></i> Topik yang Dibahas</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+            <div>
+                <h4 style="color: #9b59b6; margin-bottom: 8px;">Dasar JavaScript</h4>
+                <ul style="list-style-position: inside; line-height: 1.8;">
+                    <li>Apa itu JavaScript dan fungsinya?</li>
+                    <li>Cara Menyisipkan JS ke HTML</li>
+                    <li>Variabel, Tipe Data, dan Operator</li>
+                    <li>Fungsi dan Percabangan (if-else)</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #9b59b6; margin-bottom: 8px;">DOM Manipulation</h4>
+                <ul style="list-style-position: inside; line-height: 1.8;">
+                    <li>Apa itu Document Object Model (DOM)?</li>
+                    <li>Mencari Elemen HTML dengan JS</li>
+                    <li>Mengubah Konten, Warna, dan Style Elemen</li>
+                    <li>Menambah/Menghapus Elemen Dinamis</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #9b59b6; margin-bottom: 8px;">Event Handling</h4>
+                <ul style="list-style-position: inside; line-height: 1.8;">
+                    <li>Jenis Event (click, mouseover, input)</li>
+                    <li>Cara Menambahkan Event Listener</li>
+                    <li>Contoh Interaksi Sederhana</li>
+                    <li>Local Storage untuk Menyimpan Data</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contoh Kode & Demo Interaktif -->
+    <div style="display: flex; flex-wrap: wrap; gap: 25px; margin-bottom: 25px;">
+        <!-- Bagian Contoh Kode -->
+        <div class="contoh-kode" style="flex: 1 1 500px; background-color: #2c3e50; color: white; padding: 20px; border-radius: 12px; overflow-x: auto;">
+            <h3 style="margin-bottom: 15px;"><i class="fas fa-code" style="color: #8e44ad; margin-right: 10px;"></i> Contoh Kode JavaScript</h3>
+            <p style="margin-bottom: 10px; color: #bdc3c7;">Contoh <strong>Event Click & DOM Manipulation</strong>:</p>
+            </pre
+// Ambil elemen dari HTML
+const tombolUbahWarna = document.getElementById('ubahWarna');
+const judul = document.getElementById('judulDemo');
+
+// Tambahkan event listener saat tombol diklik
+tombolUbahWarna.addEventListener('click', function() {
+    // Ubah teks dan warna judul
+    judul.textContent = 'Warna Berubah!';
+    judul.style.color = '#9b59b6';
+    judul.style.fontSize = '24px';
+
+    // Tambahkan efek animasi
+    judul.style.transition = 'all 0.5s ease';
+});
+
+// Contoh menyimpan data ke Local Storage
+localStorage.setItem('pesan', 'Selamat Belajar JavaScript!');
+const pesanSimpan = localStorage.getItem('pesan');
+console.log(pesanSimpan);
+         </pre>
+        </div>
+
+        <!-- Bagian Demo Interaktif -->
+        <div style="flex: 1 1 300px; background-color: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+            <h3 style="color: #9b59b6; margin-bottom: 20px;"><i class="fas fa-play-circle" style="margin-right: 10px;"></i> Demo Interaktif</h3>
+            <h4 id="judulDemo" style="margin-bottom: 20px; transition: all 0.5s ease;">Klik Tombol di Bawah!</h4>
+            <button id="ubahWarna" style="background: linear-gradient(to right, #9b59b6, #8e44ad); color: white; padding: 12px 30px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+                Ubah Teks & Warna
+            </button>
+            <p style="margin-top: 20px; color: #666; font-style: italic;">Cek juga Console di Browser untuk melihat pesan dari Local Storage!</p>
+        </div>
+    </div>
+
+    <!-- Tips Praktis -->
+    <div class="tips-materi" style="background-color: #f5effc; padding: 25px; border-radius: 12px; border-left: 5px solid #9b59b6; margin-bottom: 25px;">
+        <h3 style="color: #9b59b6; margin-bottom: 15px;"><i class="fas fa-lightbulb" style="margin-right: 10px;"></i> Tips Praktis Belajar JavaScript</h3>
+        <ul style="list-style-position: inside; line-height: 1.8;">
+            <li>Gunakan <strong>Console.log()</strong> untuk mengecek nilai variabel dan debug kode</li>
+            <li>Pelajari DOM terlebih dahulu agar mudah membuat interaksi dengan elemen HTML</li>
+            <li>Coba buat proyek kecil seperti kalkulator sederhana atau form validasi</li>
+            <li>Gunakan <strong>Local Storage</strong> untuk menyimpan preferensi pengguna atau data sementara</li>
+            <li>Selalu tulis kode dengan indentasi yang rapi agar mudah dibaca</li>
+        </ul>
+    </div>
+
+    <!-- Tugas Praktikum -->
+    <div class="tugas-materi" style="background-color: #faf5ff; padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+        <h3 style="color: #9b59b6; margin-bottom: 15px;"><i class="fas fa-tasks" style="margin-right: 10px;"></i> Tugas Praktikum</h3>
+        <p style="margin-bottom: 10px;">Buatlah aplikasi interaktif sederhana dengan JavaScript:</p>
+        <ol style="list-style-position: inside; line-height: 1.8;">
+            <li>Buat form input untuk memasukkan nama dan umur pengguna</li>
+            <li>Tambahkan tombol "Tampilkan Data" yang akan menampilkan inputan di halaman</li>
+            <li>Tambahkan tombol "Ubah Tema" yang bisa mengganti warna latar belakang halaman</li>
+            <li>Simpan data nama pengguna ke Local Storage agar tetap ada meskipun halaman di-refresh</li>
+            <li>Simpan kode JS di file <strong>script-interaktif.js</strong> di folder <code>js/</code></li>
+        </ol>
+    </div>
+
+    <!-- Tombol Navigasi -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px;">
+        <a href="pertemuan3.html" style="background: linear-gradient(to right, #9b59b6, #8e44ad); color: white; padding: 10px 25px; border-radius: 8px; text-decoration: none; display: inline-block;">
+            <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Kembali ke Pertemuan 3
+        </a>
+        <a href="../index.html" style="background: linear-gradient(to right, #9b59b6, #8e44ad); color: white; padding: 10px 25px; border-radius: 8px; text-decoration: none; display: inline-block;">
+            Kembali ke Beranda <i class="fas fa-home" style="margin-left: 8px;"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Link Font Awesome untuk Ikon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Script untuk Demo Interaktif -->
+<script>
+// Ambil elemen dari HTML
+const tombolUbahWarna = document.getElementById('ubahWarna');
+const judul = document.getElementById('judulDemo');
+
+// Tambahkan event listener saat tombol diklik
+tombolUbahWarna.addEventListener('click', function() {
+    // Ubah teks dan warna judul
+    judul.textContent = 'Warna Berubah!';
+    judul.style.color = '#9b59b6';
+    judul.style.fontSize = '24px';
+
+    // Tambahkan efek animasi
+    judul.style.transition = 'all 0.5s ease';
+});
+
+// Simpan dan tampilkan pesan di console
+localStorage.setItem('pesan', 'Selamat Belajar JavaScript!');
+const pesanSimpan = localStorage.getItem('pesan');
+console.log(pesanSimpan);
+</script>
+
